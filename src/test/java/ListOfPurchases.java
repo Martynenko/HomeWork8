@@ -9,6 +9,7 @@ import java.util.Map;
 В конце вывести общее количество товаров, добавленных в список.
  */
 
+
     public class ListOfPurchases {
         public static void main(String[] args) {
             Map<String, Integer> map = new HashMap<>();

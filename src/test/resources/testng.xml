@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1">
+    <test name="Payment test">
+        <parameter name="card" value="4149123456789876"/>
+        <parameter name="amount" value="10"/>
+        <parameter name="currency" value="UAH"/>
+        <classes>
+            <class name="homework11.TestLogin"/>
+        </classes>
+    </test>
+
+</suite>

@@ -9,7 +9,6 @@ public class MoveToMouse extends BaseTest {
     @Test
     public void get() {
         driver.get("https://the-internet.herokuapp.com/hovers");
-
         for (int i = 3; i <= 5; i++) {
             WebElement userName = driver.findElement(By.cssSelector("#content > div > div:nth-child(" + i + ") > img"));
             Actions actions = new Actions(driver);

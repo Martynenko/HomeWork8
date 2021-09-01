@@ -15,6 +15,7 @@ public class Dropdown extends BaseTest {
     @Test
     public void dropdown() {
         driver.get("https://crossbrowsertesting.github.io/hover-menu.html");
+
         driver.findElement(By.cssSelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li.dropdown > a")).click();
         WebElement secondaryMenu = driver.findElement(By.cssSelector("#bs-example-navbar-collapse-1 > ul:nth-child(1) > li.dropdown > ul > li.secondary-dropdown > a"));
         Actions actions = new Actions(driver);

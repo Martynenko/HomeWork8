@@ -13,7 +13,6 @@ public class DragAndDrop extends BaseTest {
         WebElement From = driver.findElement(By.cssSelector("#draggable"));
         WebElement To = driver.findElement(By.cssSelector("#droppable"));
         Actions act = new Actions(driver);
-
         act.dragAndDrop(From, To).build().perform();
         assert (driver.findElement(By.cssSelector("#droppable")).getText().contains("Dropped!"));
     }

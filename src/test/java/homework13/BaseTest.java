@@ -14,6 +14,7 @@ public class BaseTest {
         WebDriverManager.operadriver().setup();
         driver = new OperaDriver();
         driver.manage().window().maximize();
+
     }
 
     @AfterClass(alwaysRun = true)

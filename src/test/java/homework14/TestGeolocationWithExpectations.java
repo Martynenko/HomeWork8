@@ -17,7 +17,6 @@ public class TestGeolocationWithExpectations extends BaseTest {
         System.out.println("Latitude " + Latitude.getText());
         WebElement Longitude = driver.findElement(By.cssSelector("#long-value"));
         System.out.println("Longitude " + Longitude.getText());
-
     }
 }
 

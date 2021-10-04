@@ -14,7 +14,6 @@ public class DynamicControlPage {
         open("https://the-internet.herokuapp.com/dynamic_controls");
     }
 
-    
     private SelenideElement checkbox = $("#checkbox > input[type=checkbox]");
     private SelenideElement removeCheckboxButton = $("#checkbox-example > button");
     private SelenideElement assertCheckbox = $("#message");

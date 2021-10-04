@@ -11,7 +11,6 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 public class SelenideFileTest {
-
     @Test
     public void selenideFileTest() throws FileNotFoundException {
         Configuration.browser = "opera";

@@ -6,7 +6,6 @@ public class DynamicControlTest {
     @Test
     public void dynControlTest(){
 
-
         DynamicControlPage dynamicControlPage = new DynamicControlPage();
         dynamicControlPage.setCheckbox();
         dynamicControlPage.addRemoveCheckboxButton(true);

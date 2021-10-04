@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class SelenideFileTest {
     @Test
     public void selenideFileTest() throws FileNotFoundException {
-        Configuration.browser = "opera";
+        Configuration.browser = "chrome";
         Configuration.baseUrl = "https://the-internet.herokuapp.com/";
         open("download");
         File file = $("#content > div > a:nth-child(12)").download();

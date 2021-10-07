@@ -3,6 +3,7 @@ package homework20;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -17,9 +18,9 @@ public class BaseTest {
 
     @BeforeClass
     public void beforeClass() {
-        WebDriverManager.operadriver().setup();
+        WebDriverManager.firefoxdriver().setup();
 
-        driver = new OperaDriver();
+        driver = new FirefoxDriver();
 //        driver.manage().window().maximize();
 
         wait = new WebDriverWait(driver, 10);
